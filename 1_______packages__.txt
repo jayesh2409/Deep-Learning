@@ -1,0 +1,56 @@
+import numpy as np
+
+!pip install tensorflow
+import tensorflow as tf #Tensorflow
+
+print(tf.__version__)
+
+#Keras
+from keras import datasets
+from tensorflow.keras.datasets import mnist
+# Load MNIST datasets from keras
+(train_images, train_labels), (test_images, test_labels) = datasets.mnist.load_data()
+
+test_images.shape #1000-no. of images 28,28-height and width in pixel
+
+#4. PyTorch
+!pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu115 # torch-core library for gpu, NN, tensors
+
+pip install --upgrade pip
+
+import torch
+import torch.nn as nn
+
+print(torch.__version__)
+
+torch.cuda.is_available()
+
+
+
+
+
+
+
+TensorFlow (TF):
+
+TensorFlow is an open-source deep learning framework developed by Google.
+
+It allows efficient training and deployment of neural networks on CPUs, GPUs, and TPUs.
+
+Keras:
+
+Keras is a high-level neural network API that runs on top of TensorFlow.
+
+It is user-friendly and simplifies building, training, and testing deep learning models.
+
+Theano:
+
+Theano is an early deep learning library used for mathematical and GPU-based computations.
+
+It inspired modern frameworks like TensorFlow and Keras but is now discontinued.
+
+PyTorch:
+
+PyTorch is an open-source deep learning framework developed by Facebook’s AI Research lab.
+
+It is popular for its dynamic computation graph and easy debugging, widely used in research and production.
